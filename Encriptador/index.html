@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/Logo (1).png" alt="" class="logo">
+    </header>
+
+    <main>
+        <section>
+            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            <h3 class="advertencia">&#9888; Solo letras minúsculas y sin acentos</h3>
+        </section>
+
+        <section>
+            <div id="rectangulo-oculto">
+                <textarea readonly="readonly" id="texto-rectangulo" outline: none;></textarea>
+                <button id="copiar">Copiar</button>
+                
+            </div>
+            
+            <div id="rectangulo">
+                <img src="./imagenes/Muñeco (1).png" alt="" class="img-muneco">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+
+        <section>
+            <button id="encriptar">Encriptar</button>
+            <button id="desencriptar">Desencriptar</button>
+        </section>
+    </main>
+    
+    <footer>    
+        <p class="desafio">Primer Desafio Alura</p>
+        <a href="https://www.facebook.com/oafca" target="_blank"><img src="./imagenes/facebook.png" alt="logo facebook" class="img-redes" ></a>
+        <a href="https://instagram.com/osavefl?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./imagenes/logotipo-de-instagram.png" alt="instagram" class="img-redes"></a>
+        <a href="https://github.com/falsoscar"><img src="./imagenes/github.png" alt="github" class="img-redes"></a>
+        </ul>  
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

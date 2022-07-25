@@ -1,0 +1,563 @@
+body{
+    /* Encriptador - 1 Desktop */
+
+
+    position: relative;
+    width: 100%;
+    height: 900px;
+
+    /* Light blue/light-blue-100 */
+
+    background: #F3F5FC;
+}
+
+.logo{
+    /* Logo */
+
+
+/* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#mensaje {
+    resize: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 14%;
+    left: 12%;
+    border: none;
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+.advertencia {
+    /* position: absolute; */
+    /* top: 67%; */
+    /* left: 6%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 45%;
+    height: 18px;
+    left: 21%;
+    top: 69%;
+    width: 45%;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#encriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 23%;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    position: absolute;
+    top: 77%;
+    left: 10%;
+}
+
+#encriptar:active{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+
+
+}
+
+#desencriptar{
+    /* Button */
+
+
+    box-sizing: border-box;
+    
+    /* Auto layout */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 23%;
+    height: 67px;
+
+    /* Light gray */
+
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    position: absolute;
+    top: 77%;
+    left: 37%;
+}
+
+#desencriptar:active{
+    background: #0A3871;
+    color: #FFFFFF;
+    
+}
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////css rectangulo oculto///////////////////////////////
+//////////////////////////////////////////////////////////////////////////////// 
+*/
+
+#rectangulo-oculto{
+    /* Rectangle 1 */
+    
+    
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top: 5%;
+    left: 65%;
+    
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* shadow */
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#texto-rectangulo{
+    position: absolute;
+    width: 81%;
+    height: 80%;
+    left: 10%;
+    top: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    background: #FFFFFF;
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+    
+}
+
+#rectangulo{
+
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 65%;
+    top: 5%;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.img-muneco{
+    position: absolute;
+    width: 75%;
+    height: 304px;
+    left: 10%;
+    top: 20%;
+}
+
+#rectangulo h3{
+    /* Ningún mensaje fue encontrado */
+
+
+    width: 75%;
+    height: 58px;
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+
+}
+
+#rectangulo p{
+    
+    width: 75%;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+
+    position: absolute;
+    top: 75%;
+    left: 12%;
+    right: 8%;
+}
+
+
+#copiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    /* height: 20%; */
+    left: 10%;
+    bottom: 1%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#copiar:active{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+}
+
+footer p{
+    color: #0A3871;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 25px;
+}
+
+.img-redes{
+    width: 35px;
+    margin: 1% 10% 0 10%;
+    text-align: center;
+}
+
+/* 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////CSS RESPONSITIVE////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+  /* Tamaño tablet horizontal (1024-768) */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 1100px;
+    }
+
+    #mensaje{
+        width: 85%;
+        height: 43%;
+        position: absolute;
+        left: 8%;
+        top: 12%;
+}
+    
+
+    .advertencia{
+        position: absolute;
+        width: 100%;
+        top: 57%;
+        left: 5%;
+    }
+
+
+    #encriptar{
+        position: absolute;
+        left: 5%;
+        width: 43%;
+        top: 61%;
+    }
+
+    #desencriptar{
+        position: absolute;
+        top: 61%;
+        left: 54%;
+        width: 43%;
+    }
+
+    #rectangulo-oculto{
+        position: absolute;
+        left: 5%;
+        width: 92%;
+        height: 24%;
+        top: 69%;
+    }
+
+    #copiar{
+        position: absolute;
+        bottom: 4%;
+    }
+
+    #texto-rectangulo{
+        height: 64%;
+        width: 79%;
+
+    }
+
+    #rectangulo{
+        display: none;
+    }
+   
+
+   footer{
+    position: absolute;
+    top: 95%;
+   }
+}
+  
+  /* Tamaño tablet (768-480) */
+  @media all and (min-width: 480px) and (max-width: 768px) { 
+    body{
+        position: relative;
+        width: 100%;
+        height: 1000px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3%;
+        left: 0%;
+    }
+
+    #mensaje {
+        width: 91%;
+        height: 30%;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .advertencia {
+        width: 92%;
+        position: absolute;
+        top: 43%;
+        left: 4%;
+        font-size: 25px;
+    }
+
+    #encriptar {
+        position: absolute;
+        left: 5%;
+        width: 43%;
+        top: 48%;
+    }
+
+    #desencriptar{
+        width: 43%;
+        position: absolute;
+        top: 48%;
+        left: 54%;
+    }
+
+    #rectangulo-oculto{
+        position: absolute;
+        width: 92%;
+        height: 30%;
+        top: 57%;
+        left: 5%;
+    }
+
+    #texto-rectangulo{
+        position: absolute;
+        width: 81%;
+        height: 62%;
+        left: 10%;
+        top: 5%;
+    }
+    #copiar{
+        position: absolute;
+        bottom: 5%;
+    }
+
+    #rectangulo{
+        display: none;
+    }
+  }
+  
+  /* Tamaño teléfonos (480-menos ) */
+  @media all and (max-width: 480px) {
+
+    body{
+        width: 100%;
+        height: 933px;
+    }
+    .logo{
+        position: absolute;
+        top: 2%;
+        left: 0%;
+    }
+    #mensaje{
+        width: 80%;
+        height: 35%;
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
+
+    .advertencia {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 4%;
+        font-size: 22px;
+    }
+
+    #encriptar {
+        position: absolute;
+        left: 5%;
+        width: 43%;
+        top: 48%;
+        font-size: 20px;
+    }
+
+    #desencriptar{
+        width: 43%;
+        position: absolute;
+        top: 48%;
+        left: 54%;
+        font-size: 20px;
+    }
+
+    #rectangulo-oculto{
+        position: absolute;
+        width: 92%;
+        height: 30%;
+        top: 57%;
+        left: 5%;
+    }
+
+    #texto-rectangulo{
+        position: absolute;
+        width: 81%;
+        height: 62%;
+        left: 10%;
+        top: 5%;
+    }
+    #copiar{
+        position: absolute;
+        bottom: 5%;
+    }
+
+    #rectangulo{
+        display: none;
+    }
+
+    
+   }
+  
